@@ -1,0 +1,26 @@
+HomePage	
+	Load just four works
+	Submit the form and mail it
+
+
+Work
+	Client Fields - Client, Location, Sector, Field, Project team, caption, description
+	Result - decription, launch site
+	Plan A description
+	Plan B description
+	Plan C description
+
+
+Scholarship - Email
+	Submit the scholarship form:
+		Remove CV and turn it to introduction of yourself
+
+Career - Email
+	Submit career form
+	Remove CV and turn it to introduce yourself
+
+Career single page
+	-Pop up or show career form when clicked
+
+About Us 
+	Submit contact form
