@@ -1,12 +1,10 @@
 HomePage	
 	Load just four works
 	Submit the form and mail it
-
-
 Work
-	Client Fields - Client, Location, Sector, Field, Project team, caption, description
-	Result - decription, launch site
-	Plan A description
-	Plan B description
-	Plan C description
+	Work must come as an html and a page of it's own.
 
+
+Html template for emails
+
+BSMS Application
