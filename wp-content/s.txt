@@ -15,6 +15,9 @@ Scholarship - Email
 	Submit the scholarship form:
 		Remove CV and turn it to introduction of yourself
 
+
+
+
 Career - Email
 	Submit career form
 	Remove CV and turn it to introduce yourself
@@ -22,5 +25,3 @@ Career - Email
 Career single page
 	-Pop up or show career form when clicked
 
-About Us 
-	Submit contact form

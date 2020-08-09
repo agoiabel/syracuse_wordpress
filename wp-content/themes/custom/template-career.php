@@ -136,46 +136,9 @@
                     <p class="scholarship_form__subtitle career_form__subtitle">
                         Don’t see your dream job here? Send in a blank slate application and we will get back to you
                     </p>
-                    <div class="contact_us__description__form scholarship_form ">
-                        <div class="form__group career_form__group">
-                            <label class="form__label">Your name</label>
-                            <input text="name" class="form__control" placeholder="Enter your name" />
-                        </div>
-    
-                        <div class="form__group career_form__group">
-                            <label class="form__label">Email address</label>
-                            <input text="email" class="form__control" placeholder="Enter your work email" />
-                        </div>
-    
-                        <div class="form__group career_form__group">
-                            <label class="form__label">Phone number</label>
-                            <input text="number" class="form__control" placeholder="Enter your phone number" />
-                        </div>
-                            
 
-                        <div class="form__group scholarship_form__group career_form__group">
-                            <label class="form__label">Position applying for</label>
-                            <input text="email" class="form__control" placeholder="Select preferred position" />
-                        </div>
-                     
-
-                        <div class="form__group career_form__group">
-                            <label class="form__label">Attach your CV</label>
-                            <input text="email" type="file" class="form__control" placeholder="Select preferred position" />
-                        </div>
-
-                        <div class="form__group career_form__group">
-                            <label class="form__label">Write your cover letter</label>
-                            <input text="email" class="form__control" placeholder="What makes you our bestcandidate? (less than 150 words)" />
-                        </div>
-    
-                        <div class="form__group center scholarship_button">
-                            <button class="form__button">Send Application <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/go_right_icon.svg" /> </button>
-                        </div>
-                    </div>
+                    <?php get_template_part('includes/form', 'career'); ?>
                 </div>
-
-              
 
             </div>
         </section>
