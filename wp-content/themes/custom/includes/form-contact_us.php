@@ -11,7 +11,6 @@
             <span>Get in</span> <span class="contact_us__description__title--header">touch</span>
         </div>
 
-
 		<div id="contact_feedback"></div>
 
 		<form class="contact_us__description__form" id="contact">
