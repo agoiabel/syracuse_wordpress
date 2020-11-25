@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="footer_item">
-                        <a class="footer_item__description"> Blog </a>
+                        <a href="/blog" class="footer_item__description" > Blog </a>
                         <a class="footer_item__description"> Facebook </a>
                         <a class="footer_item__description"> Instagram </a>
                         <a class="footer_item__description"> Twitter </a>

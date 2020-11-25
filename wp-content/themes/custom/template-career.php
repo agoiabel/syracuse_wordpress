@@ -36,15 +36,15 @@
                     <div class="scroll_direction__title">Scroll, please.</div>
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/scroll.svg" alt="scroll.svg"/>
                 </div>
-                <div class="say_hello">Say hello</div>
+                <div class="say_hello" onclick="location.href = '/contact';">Say hello</div>
             </div>
         </section>
 
         <section>
             <div class="container container_bmsm container_career__content">
-                <div class="big_empty career_big__empty">
 
-                </div>
+                <div class="career_page_image_layout"></div> <!-- background image needs to change -->
+
                 <div class="container_bmsm__maincontent container_career__maincontent">
                     <div class="wrapper_career__section1">
                         <div class="career_section1">
@@ -105,9 +105,9 @@
 
                 </div>
 
-                <div class="container_career__bigempty">
-                    <div class="big_empty career_big__empty1"></div>
-                    <div class="big_empty career_big__empty2"></div>
+                <div class="career_images">
+                    <div class="career_image_one"></div>
+                    <div class="career_image_two"></div>
                 </div>
 
                 <div class="container_career__section3">

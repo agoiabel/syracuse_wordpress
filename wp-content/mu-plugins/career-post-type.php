@@ -3,12 +3,12 @@
 function career_post_types() {
 	register_post_type('career', [
 		'public' => true,
-		'supports' => ['title', 'editor'],
+		'supports' => ['title'],
 		'labels' => [
 			'name' => 'Careers',
 			'singular_name' => 'Career',
-			'add_new_item' => 'Add New Event',
-			'edit_item' => 'Edit Event'
+			'edit_item' => 'Edit Career',
+			'add_new_item' => 'Add New Career',
 		],
 		'menu_icon' => 'dashicons-welcome-learn-more'
 	]);

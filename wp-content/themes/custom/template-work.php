@@ -22,54 +22,27 @@
                     <div class="scroll_direction__title">Scroll, please.</div>
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/scroll.svg" alt="scroll.svg"/>
                 </div>
-                <div class="say_hello">Say hello</div>
+                <div class="say_hello" onclick="location.href = '/contact';">Say hello</div>
             </div>
         </section>
 
         <section class="projects">
-            <div class="project" onclick="location.href = '/work_detail.html';">
-                <div class="project__techno project--large"></div>
-                <div class="project__title">Techno Mobile</div>
-            </div>
-
-            <div class="project project__even" onclick="location.href = '/work_detail.html';">
-                <div class="project__gionee project--small"></div>
-                <div class="project__title">Gionee</div>
-            </div>
-
-            <div class="project" onclick="location.href = '/work_detail.html';">
-                <div class="project__oppo project--small"></div>
-                <div class="project__title">OPPO Mobile</div>
-            </div>
-
-            <div class="project project__large project__even" onclick="location.href = '/work_detail.html';">
-                <div class="project__adidas project--large"></div>
-                <div class="project__title">Adidas</div>
-            </div>
-
-            <div class="project" onclick="location.href = '/work_detail.html';">
-                <div class="project__techno project--large"></div>
-                <div class="project__title">Techno Mobile</div>
-            </div>
-
-            <div class="project project__even" onclick="location.href = '/work_detail.html';">
-                <div class="project__gionee project--small"></div>
-                <div class="project__title">Gionee</div>
-            </div>
-
-            <div class="project" onclick="location.href = '/work_detail.html';">
-                <div class="project__oppo project--small"></div>
-                <div class="project__title">OPPO Mobile</div>
-            </div>
-
-            <div class="project project__large project__even" onclick="location.href = '/work_detail.html';">
-                <div class="project__adidas project--large"></div>
-                <div class="project__title">Adidas</div>
-            </div>
-
-            <div class="see_more"><a href="/">See more work</a></div>
+            <?php
+                $post_idx = 0;
+                $works = new WP_Query([
+                    'posts_per_page' => 4,
+                    'post_type' => 'work'
+                ]);
+                while($works->have_posts()) {
+                    $post_idx++;
+                    $works->the_post(); ?>
+                    <div class="project <?php echo ($post_idx % 2 == 0) ? 'project__even' : ''; ?>" id="link__grow" onclick="location.href = '<?= the_permalink(); ?>';">
+                        <div class="project__image" style="background-image: url(<?= the_field('result_image') ?>);"></div>
+                        <div class="project__title"><?= the_title(); ?></div>
+                    </div>
+                <?php }
+            ?>
         </section>
-
 
         <section class="contact_us">
             <div class="contact_us__image"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/contact_us.svg" /></div>

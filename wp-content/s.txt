@@ -1,10 +1,7 @@
-HomePage	
-	Load just four works
-	Submit the form and mail it
-Work
-	Work must come as an html and a page of it's own.
+gXrjm2@8pX_wEX
 
 
-Html template for emails
+username=syracuseafrica.co
+email=admin@syracuseafrica.co
 
-BSMS Application
+http://157.230.214.99/

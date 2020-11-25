@@ -7,10 +7,10 @@ function work_post_types() {
 		'labels' => [
 			'name' => 'Works',
 			'singular_name' => 'Work',
+			'edit_item' => 'Edit Work',
 			'add_new_item' => 'Add New Work',
-			'edit_item' => 'Edit Work'
 		],
-		'menu_icon' => 'dashicons-welcome-learn-more'
+		'menu_icon' => 'dashicons-portfolio'
 	]);
 }
 

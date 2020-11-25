@@ -37,7 +37,7 @@
 
                     <div class="address_socials">
                         <div class="socials">
-                            <div class="social">Blog</div>
+                            <div class="social" onclick="location.href = '/blog';">Blog</div>
                             <div class="social">Facebook</div>
                             <div class="social">Instagram</div>
                             <div class="social">Twitter</div>
@@ -53,6 +53,6 @@
                 </div>
             </div>
 
-            <span class="navigation__hello">Say hello</span>
+            <span class="navigation__hello" onclick="location.href = '/contact';">Say hello</span>
         </div>
     </div>

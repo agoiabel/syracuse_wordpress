@@ -276,8 +276,6 @@ add_action('wp_ajax_career', 'career_form');
 add_action('wp_ajax_nopriv_career', 'career_form');
 
 
-
-
 /**
  * Handle the process of sending scholarship
  * 

@@ -37,7 +37,7 @@
                         <div class="scroll_direction__title">Scroll, please.</div>
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/scroll.svg" alt="scroll.svg"/>
                     </div>
-                    <div class="say_hello">Say hello</div>
+                    <div class="say_hello" onclick="location.href = '/contact';">Say hello</div>
                 </div>
                 
                 <section class="scroll_direction">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
     
-                <div class="top_strategy__banner"></div>
+                <div class="about_us_image_one"></div>
     
                 <div class="strategies">
                     <div class="strategy">
@@ -101,8 +101,8 @@
     
                 <div class="creatives creatives__mobile">
                     <div class="creative creative__wide"></div>
-                    <div class="creative"></div>
-                    <div class="creative"></div>
+                    <div class="creative creative__mobile_image_one"></div>
+                    <div class="creative creative__mobile_image_two"></div>
                 </div>
     
                 <div class="creatives creatives__web">

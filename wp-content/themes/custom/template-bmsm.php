@@ -41,11 +41,11 @@
                     <div class="scroll_direction__title">Scroll, please.</div>
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/scroll.svg" alt="scroll.svg"/>
                 </div>
-                <div class="say_hello">Say hello</div>
+                <div class="say_hello" onclick="location.href = '/contact';">Say hello</div>
             </div>
         </section>
 
-        <div class="big_empty"></div>
+        <div class="bnsm_page_image_layout"></div>
 
         <section>
             <div class="container container_bmsm">

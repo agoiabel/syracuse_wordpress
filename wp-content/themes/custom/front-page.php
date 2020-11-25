@@ -4,7 +4,7 @@
         <section class="top">
             <div class="header_banner">
                 <header class="header">
-                    <div class="logo" onclick="location.href = '/index.html';"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt="logo.svg" /></div>
+                    <div class="logo" onclick="location.href = '/';"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt="logo.svg" /></div>
                     <div class="menu" id="menu__open" onclick="menu('open')"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu.svg" alt="menu.svg" /></div>
                 </header>
     
@@ -28,7 +28,7 @@
                     <div class="scroll_direction__title">Scroll, please.</div>
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/scroll.svg" alt="scroll.svg" />
                 </div>
-                <div class="say_hello">Say hello</div>
+                <div class="say_hello" onclick="location.href = '/contact';">Say hello</div>
             </div>
             
             <section class="scroll_direction">
@@ -86,27 +86,24 @@
         </section>
 
         <section class="projects">
-            <div class="project" id="link__grow">
-                <div class="project__techno project--large"></div>
-                <div class="project__title">Techno Mobile</div>
-            </div>
 
-            <div class="project project__even">
-                <div class="project__gionee project--small"></div>
-                <div class="project__title">Gionee</div>
-            </div>
+            <?php
+                $post_idx = 0;
+                $works = new WP_Query([
+                    'posts_per_page' => 4,
+                    'post_type' => 'work'
+                ]);
+                while($works->have_posts()) {
+                    $post_idx++;
+                    $works->the_post(); ?>
+                    <div class="project <?php echo ($post_idx % 2 == 0) ? 'project__even' : ''; ?>" id="link__grow" onclick="location.href = '<?= the_permalink(); ?>';">
+                        <div class="project__image" style="background-image: url(<?= the_field('result_image') ?>);"></div>
+                        <div class="project__title"><?= the_title(); ?></div>
+                    </div>
+                <?php }
+            ?>
 
-            <div class="project">
-                <div class="project__oppo project--small"></div>
-                <div class="project__title">OPPO Mobile</div>
-            </div>
-
-            <div class="project project__large project__even">
-                <div class="project__adidas project--large"></div>
-                <div class="project__title">Adidas</div>
-            </div>
-
-            <div class="see_more"><a href="/">See more work</a></div>
+            <!-- <div class="see_more"><a href="/work">See more work</a></div> -->
         </section>
 
         <section class="company_section">
@@ -133,7 +130,7 @@
                     Together with our friends at the Metropolitan School of Business and Management UK, we have put together an intensive program.
                 </p>
 
-                <div class="see_more"><a href="/">Learn more</a></div>
+                <div class="see_more"><a href="/bmsm">Learn more</a></div>
             </div>
 
             <div class="blog">
@@ -144,12 +141,11 @@
                     Together with our friends at the Metropolitan School of Business and Management UK, we have put together an intensive program.
                 </p>
 
-                <div class="see_more"><a href="/">Read blog</a></div>
+                <div class="see_more"><a href="/blog">Read blog</a></div>
             </div>
         </section>
 
         <?php get_template_part('includes/form', 'contact_us'); ?>
-
     </div>
 
 
